@@ -10,7 +10,14 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "paths": {}
+    "paths": {
+      "@hecate/hecate-dto": [
+        "libs/hecate-dto/src"
+      ],
+      "@hecate/hecate-dto/*": [
+        "libs/hecate-dto/src/*"
+      ]
+    }
   },
   "exclude": [
     "node_modules",

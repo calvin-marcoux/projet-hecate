@@ -25,6 +25,33 @@
       "compilerOptions": {
         "tsConfigPath": "apps/auth/tsconfig.app.json"
       }
+    },
+    "user-library": {
+      "type": "application",
+      "root": "apps/user-library",
+      "entryFile": "main",
+      "sourceRoot": "apps/user-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user-library/tsconfig.app.json"
+      }
+    },
+    "hecate-dto": {
+      "type": "library",
+      "root": "libs/hecate-dto",
+      "entryFile": "index",
+      "sourceRoot": "libs/hecate-dto/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/hecate-dto/tsconfig.lib.json"
+      }
+    },
+    "hecate-compositor": {
+      "type": "application",
+      "root": "apps/hecate-compositor",
+      "entryFile": "main",
+      "sourceRoot": "apps/hecate-compositor/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/hecate-compositor/tsconfig.app.json"
+      }
     }
   }
 }

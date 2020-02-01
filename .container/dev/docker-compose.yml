@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  postgres:
+    image: "postgres:12.1-alpine"
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_USER: admin
+    volumes:
+      - "~/data/postgres:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
