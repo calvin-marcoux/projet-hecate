@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/projet-hecate/src",
+  "monorepo": true,
+  "root": "apps/projet-hecate",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/projet-hecate/tsconfig.app.json"
+  },
+  "projects": {
+    "projet-hecate": {
+      "type": "application",
+      "root": "apps/projet-hecate",
+      "entryFile": "main",
+      "sourceRoot": "apps/projet-hecate/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/projet-hecate/tsconfig.app.json"
+      }
+    },
+    "auth": {
+      "type": "application",
+      "root": "apps/auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
+      }
+    }
+  }
+}
